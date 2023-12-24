@@ -32,7 +32,7 @@ public class Problem_02_PrimeNumbers {
         System.out.print("Please enter a number upto which you want to find prime numbers: ");
         int n = scanner.nextInt();
         
-        
+        System.out.printf("The prime numbers from 1 to %d are: ", n);
         for(int number=2; number<=n; number++) {
          
             boolean isPrime = isPrime(number);
