@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package problem_01_simplecalculatorusingswing;
 
 import java.text.DecimalFormat;
@@ -236,7 +232,12 @@ public class SimpleCalculator extends javax.swing.JFrame {
         
         try {
             double calculation_result = num1 % num2;
-            result.setText(String.valueOf( f.format(calculation_result)) );
+            if( calculation_result > 0) {
+                result.setText(String.valueOf( f.format(calculation_result)) );
+            } else {
+                result.setText(String.valueOf( calculation_result) );
+            }
+            
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         } finally {

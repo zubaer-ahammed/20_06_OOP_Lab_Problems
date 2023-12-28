@@ -57,7 +57,12 @@ public class FXMLDocumentController implements Initializable {
         double num1 = Double.parseDouble(number1.getText());
         double num2 = Double.parseDouble(number2.getText());
         double calculation_result = num1 % num2;
-        result.setText(String.valueOf( f.format(calculation_result)) );
+        if( calculation_result > 0) {
+            result.setText(String.valueOf( f.format(calculation_result)) );
+        } else {
+            result.setText(String.valueOf( calculation_result) );    
+        }
+        
         
     }
     
