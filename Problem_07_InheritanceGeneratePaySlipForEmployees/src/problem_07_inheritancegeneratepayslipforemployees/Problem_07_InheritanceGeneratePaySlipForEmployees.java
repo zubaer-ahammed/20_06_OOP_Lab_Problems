@@ -1,6 +1,5 @@
 package problem_07_inheritancegeneratepayslipforemployees;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -91,7 +90,7 @@ class Professor extends Employee {
 }
 
 /**
- *
+ * ID: 20052801006
  * @author zubaer
  */
 public class Problem_07_InheritanceGeneratePaySlipForEmployees {
